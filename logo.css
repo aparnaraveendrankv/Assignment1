@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:  #333;
+}
+
+.outer-diamond {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform: rotate(45deg);
+    border: 2px solid #333;
+    box-sizing: border-box;
+    background: 
+        linear-gradient(135deg, rgb(170, 116, 116), rgb(0, 91, 171)) top,
+        linear-gradient(225deg, rgb(0, 0, 255), rgb(255, 255, 0)) bottom,
+        linear-gradient(45deg, rgb(255, 0, 255), rgb(0, 255, 255)) left,
+        linear-gradient(-45deg, rgb(255, 255, 255), rgb(0, 0, 0)) right;
+    background-origin: border-box;
+    background-clip: content-box, border-box, border-box, border-box;
+}
+
+
+.inner-diamond {
+    width: 200px; 
+    height: 200px; 
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.centered-text {
+    position: relative;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(-135deg); 
+    align-items: center;
+    text-align: center;
+
+}
+
+.white-text {
+    color: white;
+    font-size: 25px;
+}
+
+.orange-text {
+    color: orange;
+    font-size: 35px;
+    margin: 0 10px; 
+}
+
+.white-para p {
+    color: white;
+}
